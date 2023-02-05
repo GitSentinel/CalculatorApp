@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="button_size">85dp</dimen>
-
-    <dimen name="zero_button_size">160dp</dimen>
-    <dimen name="text_size">40dp</dimen>
-
+    <dimen name="buttonsize">85dp</dimen>
+    <dimen name="zerobuttonsize">170dp</dimen>
+    <dimen name="buttontextsize">32dp</dimen>
 </resources>

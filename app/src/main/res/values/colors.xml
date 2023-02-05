@@ -8,13 +8,12 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
-    <color name="actionbutton">#A4A4A4</color>
+    <color name="actionbackgroundcolor">#A4A4A4</color>
     <color name="actiontextcolor">#020202</color>
 
-    <color name="actionbackgroundcolor">#FC9E0A</color>
-    <color name="actionbuttoncolor">#FEFEFA</color>
-
     <color name="numberbackgroundcolor">#333333</color>
-    <color name="numbercolor">#FDFDFD</color>
+    <color name="numbertextcolor">#F6F6F6</color>
 
+    <color name="mathbackgroundcolor">#FE9E0A</color>
+    <color name="mathtextcolor">#FEF6FE</color>
 </resources>
