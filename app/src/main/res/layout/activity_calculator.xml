@@ -42,45 +42,45 @@
 
             <Button
                 android:id="@+id/ac"
-                android:layout_width="wrap_content"
+                android:layout_width="@dimen/button_size"
                 android:layout_height="wrap_content"
-                android:text="1"
+                android:text="AC"
                 app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/plus"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/plus"/>
+                app:layout_constraintTop_toTopOf="parent" />
 
             <Button
                 android:id="@+id/plus"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="2"
+                android:text="+/-"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/per"
                 app:layout_constraintStart_toEndOf="@+id/ac"
-                app:layout_constraintEnd_toStartOf="@+id/per"/>
+                app:layout_constraintTop_toTopOf="parent" />
 
             <Button
                 android:id="@+id/per"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="3"
+                android:text="%"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/divisor"
                 app:layout_constraintStart_toEndOf="@+id/plus"
-                app:layout_constraintEnd_toStartOf="@id/divisor"/>
+                app:layout_constraintTop_toTopOf="parent" />
 
             <Button
                 android:id="@+id/divisor"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="4"
+                android:text="÷"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/per"/>
-        </androidx.constraintlayout.widget.ConstraintLayout>
+                app:layout_constraintStart_toEndOf="@+id/per"
+                app:layout_constraintTop_toTopOf="parent" />
 
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
 
     </LinearLayout>
