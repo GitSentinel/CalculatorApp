@@ -32,19 +32,23 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="7"
-        android:background="@color/white">
+        android:background="@color/white"
+        android:orientation="vertical">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="70dp"
+            android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@color/teal_200">
+            android:background="@color/black">
 
             <Button
                 android:id="@+id/ac"
                 android:layout_width="@dimen/button_size"
-                android:layout_height="wrap_content"
+                android:layout_height="@dimen/button_size"
+                android:background="@drawable/mathematical_expression"
                 android:text="AC"
+                android:textSize="35dp"
+                android:textColor="@color/actiontextcolor"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/plus"
                 app:layout_constraintStart_toStartOf="parent"
@@ -52,9 +56,12 @@
 
             <Button
                 android:id="@+id/plus"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="@dimen/button_size"
+                android:layout_height="@dimen/button_size"
+                android:background="@drawable/mathematical_expression"
+                android:textSize="35dp"
                 android:text="+/-"
+                android:textColor="@color/actiontextcolor"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/per"
                 app:layout_constraintStart_toEndOf="@+id/ac"
@@ -62,9 +69,12 @@
 
             <Button
                 android:id="@+id/per"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="@dimen/button_size"
+                android:layout_height="@dimen/button_size"
+                android:background="@drawable/mathematical_expression"
                 android:text="%"
+                android:textSize="35dp"
+                android:textColor="@color/actiontextcolor"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@id/divisor"
                 app:layout_constraintStart_toEndOf="@+id/plus"
@@ -72,13 +82,248 @@
 
             <Button
                 android:id="@+id/divisor"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="@dimen/button_size"
+                android:layout_height="@dimen/button_size"
+                android:background="@drawable/mathematical_signs"
                 android:text="÷"
+                android:textSize="35dp"
+                android:textColor="@color/actionbuttoncolor"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/per"
                 app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/black">
+
+            <Button
+                android:id="@+id/seven"
+                android:layout_width="@dimen/button_size"
+                android:layout_height="@dimen/button_size"
+                android:background="@drawable/number_bg"
+                android:text="7"
+                android:textSize="35dp"
+                android:textColor="@color/numbercolor"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/eight"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/eight"
+                android:layout_width="@dimen/button_size"
+                android:layout_height="@dimen/button_size"
+                android:background="@drawable/number_bg"
+                android:textSize="35dp"
+                android:text="8"
+                android:textColor="@color/numbercolor"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/nine"
+                app:layout_constraintStart_toEndOf="@+id/seven"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/nine"
+                android:layout_width="@dimen/button_size"
+                android:layout_height="@dimen/button_size"
+                android:background="@drawable/number_bg"
+                android:text="9"
+                android:textSize="35dp"
+                android:textColor="@color/numbercolor"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/multiply"
+                app:layout_constraintStart_toEndOf="@+id/eight"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/multiply"
+                android:layout_width="@dimen/button_size"
+                android:layout_height="@dimen/button_size"
+                android:background="@drawable/mathematical_signs"
+                android:text="×"
+                android:textSize="35dp"
+                android:textColor="@color/actionbuttoncolor"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/nine"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/black">
+
+            <Button
+                android:id="@+id/four"
+                android:layout_width="@dimen/button_size"
+                android:layout_height="@dimen/button_size"
+                android:background="@drawable/number_bg"
+                android:text="4"
+                android:textSize="35dp"
+                android:textColor="@color/numbercolor"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/five"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/five"
+                android:layout_width="@dimen/button_size"
+                android:layout_height="@dimen/button_size"
+                android:background="@drawable/number_bg"
+                android:textSize="35dp"
+                android:text="5"
+                android:textColor="@color/numbercolor"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/six"
+                app:layout_constraintStart_toEndOf="@+id/four"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/six"
+                android:layout_width="@dimen/button_size"
+                android:layout_height="@dimen/button_size"
+                android:background="@drawable/number_bg"
+                android:text="6"
+                android:textSize="35dp"
+                android:textColor="@color/numbercolor"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/subs"
+                app:layout_constraintStart_toEndOf="@+id/five"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/subs"
+                android:layout_width="@dimen/button_size"
+                android:layout_height="@dimen/button_size"
+                android:background="@drawable/mathematical_signs"
+                android:text="-"
+                android:textSize="35dp"
+                android:textColor="@color/actionbuttoncolor"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/six"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/black">
+
+            <Button
+                android:id="@+id/one"
+                android:layout_width="@dimen/button_size"
+                android:layout_height="@dimen/button_size"
+                android:background="@drawable/number_bg"
+                android:text="1"
+                android:textSize="35dp"
+                android:textColor="@color/numbercolor"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/two"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/two"
+                android:layout_width="@dimen/button_size"
+                android:layout_height="@dimen/button_size"
+                android:background="@drawable/number_bg"
+                android:textSize="35dp"
+                android:text="2"
+                android:textColor="@color/numbercolor"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/three"
+                app:layout_constraintStart_toEndOf="@+id/one"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/three"
+                android:layout_width="@dimen/button_size"
+                android:layout_height="@dimen/button_size"
+                android:background="@drawable/number_bg"
+                android:text="3"
+                android:textSize="35dp"
+                android:textColor="@color/numbercolor"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/add"
+                app:layout_constraintStart_toEndOf="@+id/two"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/add"
+                android:layout_width="@dimen/button_size"
+                android:layout_height="@dimen/button_size"
+                android:background="@drawable/mathematical_signs"
+                android:text="+"
+                android:textSize="35dp"
+                android:textColor="@color/actionbuttoncolor"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/three"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/black">
+
+            <Button
+                android:id="@+id/zero"
+                android:layout_width="@dimen/button_size"
+                android:layout_height="@dimen/button_size"
+                android:background="@drawable/number_bg"
+                android:text="0"
+                android:textSize="35dp"
+                android:textColor="@color/numbercolor"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/point"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/point"
+                android:layout_width="@dimen/button_size"
+                android:layout_height="@dimen/button_size"
+                android:background="@drawable/number_bg"
+                android:textSize="35dp"
+                android:text="."
+                android:textColor="@color/numbercolor"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/equal"
+                app:layout_constraintStart_toEndOf="@+id/zero"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/equal"
+                android:layout_width="@dimen/button_size"
+                android:layout_height="@dimen/button_size"
+                android:background="@drawable/number_bg"
+                android:text="="
+                android:textColor="@color/numbercolor"
+                android:textSize="35dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/point"
+                app:layout_constraintTop_toTopOf="parent" />
+
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
