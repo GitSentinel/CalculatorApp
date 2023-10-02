@@ -1,10 +1,11 @@
 package com.jacinthmahanta.calculator
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
+
 
 class Calculator : AppCompatActivity() {
 
@@ -12,6 +13,7 @@ class Calculator : AppCompatActivity() {
     lateinit var number2: String
     lateinit var operation: String
     lateinit var result: TextView
+    private var flag = 0
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_calculator)
@@ -35,6 +37,7 @@ class Calculator : AppCompatActivity() {
         val divide = findViewById<Button>(R.id.divide)
         val multiply = findViewById<Button>(R.id.multiply)
         val equals = findViewById<Button>(R.id.equal)
+        val allClear = findViewById<Button>(R.id.ac)
         n1.setOnClickListener {
             SetNumber("1")
         }
@@ -80,6 +83,12 @@ class Calculator : AppCompatActivity() {
         equals.setOnClickListener {
             calculate()
         }
+        allClear.setOnClickListener {
+            val intent = intent
+            finish()
+            startActivity(intent)
+        }
+
 
     }
 
