@@ -27,7 +27,7 @@ jobs:
       - name: Upload lint check report
         uses: actions/upload-artifact@v3
         with:
-          name: lint-results-debug.html
+          name: lint-results-debug
           path: app/build/reports/lint-results-debug.html
 
       - name: Perform unit tests
@@ -37,7 +37,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: unit_test_report
-          path: app/build/reports/test/testDebugUnitTest/
+          path: app/build/reports/tests/testDebugUnitTest/
 
       - name: Build Debug APK
         run: ./gradlew assembleDebug --stacktrace
@@ -45,5 +45,5 @@ jobs:
       - name: Upload APK
         uses: actions/upload-artifact@v3
         with:
-          name: app-debug.apk
+          name: app-debug
           path: app/build/outputs/apk/debug/app-debug.apk
