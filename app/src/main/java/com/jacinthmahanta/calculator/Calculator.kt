@@ -70,7 +70,8 @@ class Calculator : AppCompatActivity() {
             "+" -> (number1.toInt() + number2.toInt()).toString()
             "-" -> (number1.toInt() - number2.toInt()).toString()
             "/" -> (number1.toInt() / number2.toInt()).toString()
-            else -> (number1.toInt() * number2.toInt()).toString()
+            "*" -> (number1.toInt() * number2.toInt()).toString()
+            else -> ""
         }
 
         number1 = binding.result.text.toString()
