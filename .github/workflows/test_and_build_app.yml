@@ -1,4 +1,4 @@
-name: Build APK
+name: Test and Build APK
 
 on:
   push:
