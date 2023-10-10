@@ -50,6 +50,7 @@ class Calculator : AppCompatActivity() {
             multiply.setOnClickListener { setOperation("*") }
             equal.setOnClickListener { calculate() }
             btnHistory.setOnClickListener { showHistory() }
+            ac.setOnClickListener { clear() }
         }
     }
 
@@ -133,5 +134,13 @@ class Calculator : AppCompatActivity() {
 
         val itemAdapter = HistoryAdapter(historyList)
         rvHistory.adapter = itemAdapter
+    }
+
+    private fun clear() {
+        number1 = ""
+        number2 = ""
+        operation = ""
+        tempCalculation = ""
+        binding.result.text = "0"
     }
 }
