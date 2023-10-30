@@ -92,7 +92,14 @@ class Calculator : AppCompatActivity() {
             binding.result.text = when (operation) {
                 "+" -> (number1.toInt() + number2.toInt()).toString()
                 "-" -> (number1.toInt() - number2.toInt()).toString()
-                "/" -> (number1.toInt() / number2.toInt()).toString()
+                "/" -> {
+                    if (number2.toInt() == 0) {
+                        "error"
+                    } else {
+                        (number1.toInt() / number2.toInt()).toString()
+                    }
+                }
+
                 "*" -> (number1.toInt() * number2.toInt()).toString()
                 else -> ""
             }
